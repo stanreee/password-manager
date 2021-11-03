@@ -1,9 +1,0 @@
-first time launches, user enters a master password
-    -> master password is hashed, and is used as a key to decrypt all other passwords
-    -> that way, if some random person tries to access the other passwords, they need to provide the same master password in order to get the correct key to decrypt all other passwords
-
-
-    -> problems:
-        -> need to find a way to store the hashed master password (if it's readily available to anybody, they can just use that as the key to decrypt the encrypted passwords)
-            -> instead of storing it, hide it somehow?
-            -> potential solution: store as environment variable using os.environ(['ENCRYPTION_KEY'])
